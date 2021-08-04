@@ -11,3 +11,5 @@
 <% end %>
 
 <h3>Average age of all players: <%= @teams.all_players_average_age %></h3>
+
+<%= link_to 'Register new team', new_competition_team_path(@competition) %>
