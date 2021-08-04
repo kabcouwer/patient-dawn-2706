@@ -10,13 +10,6 @@ RSpec.describe 'competitions index page' do
   end
 
   it 'displays the names of all competitions as links' do
-    # User Story 1 - Competition Index
-    #
-    # As a user
-    # When I visit the competion index
-    # Then I see the names of all competitions
-    # Each competition name links to its show page
-
     expect(page).to have_link(@competition_1.name)
     expect(page).to have_link(@competition_2.name)
     expect(page).to have_link(@competition_3.name)
